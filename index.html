@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Eligibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <h2>Check Your Vote Eligibility</h2>
+        
+        <label for="nameInput">Enter your name: </label>
+        <input type="text" id="nameInput" placeholder="Your name" required><br>
+        
+        <label for="ageInput">Enter your age: </label>
+        <input type="number" id="ageInput" placeholder="Your age" required><br>
+        
+        <label for="nationalityInput">Enter your nationality: </label>
+        <input type="text" id="nationalityInput" placeholder="Nationality" required><br>
+        
+        <label for="idType">Select ID Type: </label>
+        <select id="idType" required>
+            <option value="">--Select ID Type--</option>
+            <option value="aadhar">Aadhar</option>
+            <option value="pan">PAN</option>
+            <option value="voter">Voter ID</option>
+        </select><br>
+
+        <label for="idNumber">Enter ID Number: </label>
+        <input type="text" id="idNumber" placeholder="ID Number" required><br>
+
+        <button id="checkBtn" onclick="check()">Check Eligibility</button>
+        <h3 id="result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
